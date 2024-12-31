@@ -1,0 +1,25 @@
+{
+  "name": "ngx-progress-chart",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssondoss/ngx-progress-chart"
+  },
+  "license": "MIT",
+  "author": "Sondos Marashdeh <sondosmarashdeh360@gmail.com>",
+  "description": "A customizable light weight progress chart for Angular applications",
+  "keywords": [
+    "angular",
+    "progress",
+    "chart",
+    "ngx",
+    "progress-bar"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
