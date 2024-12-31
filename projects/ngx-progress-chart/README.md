@@ -1,6 +1,14 @@
-# NgxProgressChart
 
+# ngx-progress-chart
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+A customizable lightweight progress chart for Angular applications.
+
+![Progress Chart Example](https://github.com/ssondoss/ngx-progress-chart/blob/main/projects/ngx-progress-chart/progress-bar-chart.png)
+
+## Features
+- Customizable
+- Lightweight
+- Native Angular code
 
 
 ## Installation
@@ -36,9 +44,13 @@ export class AppModule {}
 #### simple usage:
 ```html
 <ngx-progress-chart 
+    [labels]="['0%', '50%', '100%']"
     [progressWidth]="75"
+    [tooltipClass]="'custom-tooltip'"
     [tooltip]="'75%'"
+    [progressBarStyle]="{ 'background-color': '#eee' }"
     [progressFillStyle]="{ 'background-color': '#4caf50' }"
+    [labelsStyle]="{ 'font-size': '14px', color: '#333' }"
     >
 </ngx-progress-chart>
 ```
@@ -55,10 +67,10 @@ export class AppModule {}
   [progressBarClasses]="['custom-progress-bar']"
   [progressFillClasses]="['custom-progress-fill']"
   [labelsClasses]="['custom-label']"
-  [containerStyle]="{ 'background-color': '#f3f3f3', padding: '10px' }"
-  [progressBarStyle]="{ 'background-color': '#ddd' }"
-  [progressFillStyle]="{ 'background-color': '#4caf50' }"
-  [labelsStyle]="{ 'font-size': '14px', color: '#333' }"
+  [containerStyle]="{ ... }"
+  [progressBarStyle]="{ ... }"
+  [progressFillStyle]="{ ... }"
+  [labelsStyle]="{ ... }"
 ></ngx-progress-chart>
 ```
 define custom styles for the package in your ```global styles file```

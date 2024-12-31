@@ -73,6 +73,7 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
         color: #000;
         animation: fadeIn 0.8s forwards !important;
         padding: 4px 8px;
+        border: 1px solid #eee;
         background-color: #fff;
       }
       .progress-labels {
@@ -99,7 +100,7 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
     `,
   ],
 })
-export class NgxProgressBarChartComponent implements OnInit {
+export class NgxProgressChartComponent implements OnInit {
   @Input() labels: any[] = [];
   @Input() progressWidth: number = 0;
   @Input() tooltipClass: string = '';

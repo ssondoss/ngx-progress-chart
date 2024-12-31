@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
-import { NgxProgressBarChartComponent } from './ngx-progress-chart.component';
+import { NgxProgressChartComponent } from './ngx-progress-chart.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
-    NgxProgressBarChartComponent
+    NgxProgressChartComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
-    NgxProgressBarChartComponent
+    NgxProgressChartComponent
   ]
 })
-export class NgxProgressBarChartModule { }
+export class NgxProgressChartModule { }
